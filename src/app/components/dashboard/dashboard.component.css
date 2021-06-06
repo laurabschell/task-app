@@ -1,0 +1,43 @@
+.container {
+  background-color: #f7f7f7;
+  margin: .7rem 0 0 0;
+  display: flex;
+  border-radius: 40px 40px 0 0;
+  position: absolute;
+  flex-flow: column;
+  min-height: 85vh;
+  width: 100vw;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.179);
+}
+
+.box {
+  /* background-color: darkgreen; */
+  margin: 1rem auto;
+  position: relative;
+  width: 90%;
+  text-align: center;
+}
+
+h4 {
+  font-family: 'Dancing Script';
+  /* color: #dfdfdf ; */
+  font-size: 1.8rem;
+  text-align: center;
+  /* font-weight: 900; */
+  text-transform: lowercase;
+  color: #444444 ;
+  text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.179);
+}
+
+input {
+  border: 0;
+  border-bottom: 2px solid #FFB329;
+  /* border-radius: 20px; */
+  text-align: center;
+  width: 90%;
+  line-height: 200%;
+  font-family: 'Lato';
+  background-color: transparent;
+  font-size: 1rem;
+}
+
