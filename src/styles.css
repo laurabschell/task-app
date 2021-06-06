@@ -3,8 +3,16 @@
   padding: 0;
 }
 
+:root {
+  --font-color-white: #fffcf3;
+  --orange-color: #FFBD1C;
+  --font-color-grey: #545454ac;
+  --input-text: #272727;
+  --text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.179);
+  --font-family-title: 'Dancing Script', cursive;
+  --font-family-content: 'Lato', sans-serif;
+}
+
 body {
   background: linear-gradient(323deg, rgba(255,240,121,1) 0%, rgba(255,210,0,1) 36%, rgba(255,156,69,1) 100%) fixed;
-  display: flex;
-  height: 100vh;
 }
