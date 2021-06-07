@@ -19,3 +19,15 @@
 .app-navbar img {
   width: 4rem;
 }
+
+@media (max-width: 290px) {
+  .app-navbar h3 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 335px) {
+  .app-navbar p {
+    font-size: .7rem;
+  }
+}
