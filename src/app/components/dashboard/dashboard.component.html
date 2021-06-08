@@ -1,7 +1,7 @@
 <div class="app-dashboard">
   <div class="dash-content">
       <div class="input-area">
-          <input type="text" [(ngModel)]="taskName" placeholder="enter a task...">
+          <input type="text" [(ngModel)]="taskName" placeholder="enter a task..." maxlength="30">
           <button *ngIf="taskName.length > 0" class="add-btn" (click)="addTask()">add</button>
       </div>
       <div *ngIf="taskList.length == 0" class="no-tasks-sign">

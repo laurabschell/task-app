@@ -6,6 +6,8 @@
   bottom: 0;
   width: 100vw;
   min-height: 85vh;
+  max-height: 85vh;
+  overflow: scroll;
 }
 
 .dash-content {
@@ -91,6 +93,7 @@
   display: flex;
   flex-direction: column;
   margin: 2.5rem 0;
+
 }
 
 .task-badge li {
@@ -129,11 +132,15 @@
 }
 
 
-@media (max-width: 280px) {
+@media (max-width: 300px) {
   .input-area input,
   ::placeholder,
   .input-area .add-btn{
     font-size: .8rem;
+  }
+
+  input {
+    max-length: 16;
   }
 
   .task-badge i {
