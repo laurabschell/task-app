@@ -1,18 +1,18 @@
 <div class="app-dashboard">
   <div class="dash-content">
       <div class="input-area">
-          <input type="text" placeholder="enter a task...">
-          <button class="add-btn">add</button>
+          <input type="text" [(ngModel)]="taskName" placeholder="enter a task...">
+          <button *ngIf="taskName.length > 0" class="add-btn" (click)="addTask()">add</button>
       </div>
-      <div class="no-tasks-sign">
+      <div *ngIf="taskList.length == 0" class="no-tasks-sign">
           <h5>no tasks for today yet</h5>
       </div>
       <div class="task-badge">
           <ul>
-              <li>
-                  <i class="far fa-check-square"></i>
-                  <p>taskname</p>
-                  <i class="fas fa-trash-alt"></i>
+              <li *ngFor="let task of taskList; let i = index">
+                  <i class="far fa-check-square" (click)="updateTask(task, i)" [ngClass]="task.status ? 'fas green-check' : 'far'"></i>
+                  <p>{{ task.name }}</p>
+                  <i class="fas fa-trash-alt" (click)="removeTask(i)"></i>
               </li>
           </ul>
       </div>
